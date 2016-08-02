@@ -1,0 +1,30 @@
+
+/*  File: style.css
+	Author: Jonas Solsvik
+	Created: 29/07/16 */
+
+
+html, body {max-width: 100%;
+            font-family: 'Open sans', sans-serif;}
+
+.headerflex { display: flex; }
+
+	header { border: 1px solid white;
+			 border-bottom: 1px solid #999999; 
+			 margin-top: 40px;
+			 flex:  1 1 200px;}
+
+.mainflex {display:flex;
+           flex-wrap: wrap;
+       	   align-items: stretch;}
+
+	nav {border: 1px solid black;
+	     flex: 2 1 120px;
+	 	 font-size: 25px;}
+
+		.navitem {margin: 20px;}
+
+	main {border: 1px solid black;
+	      flex: 8 1 480px;}
+
+input {min-width: 80%;}
