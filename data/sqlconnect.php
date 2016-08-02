@@ -12,32 +12,8 @@ define('PASS', 'root');
 define('DB', 'wisutleie');
 
 
-function dbinject($sql, $debug=FALSE) {
-	// Function that uses a procedural algoritm to connect. 
 
-	// 1. Establish connection
-	$conn = mysqli_connect(SERVER, USER, PASS, DB);
-	if (!$conn) {
-    	die("Connection failed: " . mysqli_connect_error());
-	} else {echo 'Connection Success! </br>';}
-
-
-	// 2. Send query get potential result
-	$result = mysqli_query($conn, $sql);
-	mysqli_fetch_all($result);
-
-	// 3. Error check
-	if ($result) {
-	    echo "Query successfully sent. </br>'";} else {
-	    echo "Error sending query." . mysqli_error($conn);}
-
-	// 4. Close connection and return the good stuff
-	mysqli_close($conn);
-	return $result;
-}; 
-
-
-function testinject($sql){
+function dbinject($sql){
 	// Function that uses an object-oriented algoritm to connect.
 
 	$servername = "localhost";
@@ -57,26 +33,27 @@ function testinject($sql){
 
 	$stmt = $conn->prepare($sql);
 	$stmt->execute();
-	
 	$res = $stmt->fetchAll();
 
-    
+	echo '</br>';
 	$count = 0;
-
     foreach($res as $row){
-    	echo $row;
     	foreach ($row as $key => $value) {
-
     		if ($count % 2 == 0){
-    			echo $key . ' --> ' . $value . '</br>';
-    			$count++;
-    		} else {
-    			$count++;
-    			continue;
-    		}
+    			echo $key . ' --> ' . $value . '</br>';	} 
+    		$count++;	
     	}
     }
-} 
+    /*
+		As the above for-loop suggest, the format of which data is returned
+		 from the fetchAll()-method is a 2D-array of associative arrays.
+		
+		Example: [[key1->value1, key2->value1],        Row 1
+		          [key1->value1, key2->value2],        Row 2
+		          ..........................,          Row Nth
+		          ]]
+    */
+}
 
 
 /*

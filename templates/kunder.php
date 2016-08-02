@@ -11,10 +11,7 @@ echo 'kunder.php';
 
 <?php
 $query = 'SELECT * FROM kunder';
-// $result = dbinject($query);
-// echo $result[0];
-// echo 'Script passed here.';
-testinject($query);
+dbinject($query);
 
 ?>
 
