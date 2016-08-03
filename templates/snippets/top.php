@@ -27,6 +27,7 @@ $TEMPLATES = '../../templates/';
 </head>
 
 <body>
+<div class="container-fluid">
 	<div class="headerflex">
 		<header>
 			<a href="/"><img src="<?php echo $STATIC ?>Wisum_logo.png" alt="Wisum logo" height="60" width="224"/> </a>
@@ -34,6 +35,7 @@ $TEMPLATES = '../../templates/';
 	</div>
 
 	<div class="mainflex">
+	
 		<nav>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>utleie.php">Utleie</a>
@@ -48,8 +50,8 @@ $TEMPLATES = '../../templates/';
 				<a href="<?php echo $TEMPLATES;?>kunder_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem">
-				<a href="#">Kontrakter</a>
-				<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>kontrakter.php">Kontrakter</a>
+				<a href="<?php echo $TEMPLATES;?>kontrakter_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem"><a href="<?php echo $TEMPLATES;?>admin.php">Admin</a></div>
 			<div class="navitem">Logg ut</div>

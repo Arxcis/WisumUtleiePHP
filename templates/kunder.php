@@ -4,15 +4,13 @@
 	Created: 29/07/16        -->
 
 <?php 
-include '../data/sqlconnect.php'; // dbinject($sql)
 include 'snippets/top.php';
-echo 'kunder.php';
+include '../controller/sqlconnect.php'; // dbinject($sql)
 ?>
 
 <?php
 $query = 'SELECT * FROM kunder';
 dbinject($query);
-
 ?>
 
 <?php
