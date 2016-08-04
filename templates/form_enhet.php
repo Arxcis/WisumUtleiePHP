@@ -8,7 +8,7 @@
 $filename='enheter_ny.php';?>
 
 
-<form class="form-horizontal" action="../controller/form_enhet.php" method="post">
+<form class="form-horizontal" action="../controller/ny_enhet.php" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -18,7 +18,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Varenavn">Varenavn</label>  
   <div class="col-md-4">
-  <input id="Varenavn" name="Varenavn" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="Varenavn" name="enhet[Varenavn]" type="text" placeholder="" class="form-control input-md" required=""/>
     
   </div>
 </div>
@@ -27,7 +27,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Antall">Antall</label>  
   <div class="col-md-1">
-  <input id="Antall" name="Antall" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="Antall" name="enhet[Antall]" type="text" placeholder="" class="form-control input-md" required=""/>
     
   </div>
 </div>
@@ -36,7 +36,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="#QR-kode">#QR-kode</label>  
   <div class="col-md-4">
-  <input id="#QR-kode" name="#QR-kode" type="text" placeholder="Optional" class="form-control input-md">
+  <input id="#QR-kode" name="enhet[QRkode]" type="text" placeholder="Optional" class="form-control input-md"/>
     
   </div>
 </div>
@@ -45,7 +45,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="#Serienummer">#Serienummer</label>  
   <div class="col-md-4">
-  <input id="#Serienummer" name="#Serienummer" type="text" placeholder="Optional" class="form-control input-md">
+  <input id="#Serienummer" name="enhet[Serienummer]" type="text" placeholder="Optional" class="form-control input-md"/>
     
   </div>
 </div>
@@ -54,7 +54,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Gruppe">Gruppe</label>  
   <div class="col-md-4">
-  <input id="Gruppe" name="Gruppe" type="text" placeholder="" class="form-control input-md">
+  <input id="Gruppe" name="enhet[Gruppe]" type="text" placeholder="" class="form-control input-md"/>
     
   </div>
 </div>
@@ -63,7 +63,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Undergruppe">Undergruppe</label>  
   <div class="col-md-4">
-  <input id="Undergruppe" name="Undergruppe" type="text" placeholder="" class="form-control input-md">
+  <input id="Undergruppe" name="enhet[Undergruppe]" type="text" placeholder="" class="form-control input-md"/>
     
   </div>
 </div>
@@ -72,7 +72,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Pris">Pris</label>  
   <div class="col-md-2">
-  <input id="Pris" name="Pris" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="Pris" name="enhet[Pris]" type="text" placeholder="" class="form-control input-md" required=""/>
     
   </div>
 </div>
@@ -81,7 +81,7 @@ $filename='enheter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Beskrivelse">Beskrivelse</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="Beskrivelse" name="Beskrivelse"></textarea>
+    <textarea class="form-control" id="Beskrivelse" name="enhet[Beskrivelse]"></textarea>
   </div>
 </div>
 

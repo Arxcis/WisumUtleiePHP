@@ -39,19 +39,19 @@ $TEMPLATES = '../../templates/';
 		<nav>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>utleie.php">Utleie</a>
-			    <a href="<?php echo $TEMPLATES;?>utleie_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>   
+			    <a href="<?php echo $TEMPLATES;?>form_utleie.php"><i class="fa fa-plus" aria-hidden="true"></i></a>   
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>enheter.php">Enheter</a>
-				<a href="<?php echo $TEMPLATES;?>enheter_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_enhet.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>kunder.php">Kunder</a>
-				<a href="<?php echo $TEMPLATES;?>kunder_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_kunde.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>kontrakter.php">Kontrakter</a>
-				<a href="<?php echo $TEMPLATES;?>kontrakter_ny.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_kontrakt.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem"><a href="<?php echo $TEMPLATES;?>admin.php">Admin</a></div>
 			<div class="navitem">Logg ut</div>

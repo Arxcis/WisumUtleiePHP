@@ -24,10 +24,6 @@ function dbinject($sql){
 	   	echo "Connection failed: " . $e->getMessage();
 	    }
 
-	$stmt = $conn->prepare($sql);
-	$stmt->execute();
-	$res = $stmt->fetchAll();
-
 	function echoAll($data){
 		echo '</br>';
 		$count = 0;
@@ -39,7 +35,16 @@ function dbinject($sql){
 	    	}
 	    }
 	}
-	if ($res){echoAll($res);} else {echo 'No return';}
+
+	$stmt = $conn->prepare($sql);
+	$stmt->execute();
+	try{
+		$res = $stmt->fetchAll();
+		echoAll($res);
+	} catch(Exception $e){
+		echo 'Marching on!';
+	}
+	
 	$conn = null;
 }
 /*

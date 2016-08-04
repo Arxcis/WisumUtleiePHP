@@ -1,0 +1,35 @@
+
+
+
+TODAY I LEARNED - TIL:
+
+04/08/16
+-------------
+
+
+PHP sin måte å håndtere multiline comments:
+
+<<<EOT
+	
+	Skriv Whatever you want.
+
+EOT;
+
+
+ ---
+PHP har en veldig god måte å håndtere POST reqeusts fra forms på.
+En får muligheten til å opprette en dictionary i HTML dokumentet, 
+som PHP forstår riktig.
+
+Eksemepel ex.html:
+<form action="ex.php" method="post">
+	<input name="kontrakt[tittel]"/>
+	<input name="kontrakt[tekst]"/>
+	<input type="submit"/>
+</form>
+
+videre i php koden PHP:	
+ex.php
+	$kontrakt = $_POST['kontrakt'];
+	'INSERT INTO $kontrakt['tittel']'
+

@@ -9,7 +9,7 @@ include 'snippets/top.php';
 
 $filename='kontrakter_ny.php';?>
 
-<form class="form-horizontal" action="../controller/form_kontrakt.php" method="post">
+<form class="form-horizontal" action="../controller/ny_kontrakt.php" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -19,7 +19,7 @@ $filename='kontrakter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Tittel">Tittel</label>  
   <div class="col-md-4">
-    <input id="Tittel" name="Tittel" type="text" placeholder="" class="form-control input-md" required="">
+    <input id="Tittel" name="kontrakt[Tittel]" type="text" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -28,7 +28,7 @@ $filename='kontrakter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Forfatter">Forfatter</label>  
   <div class="col-md-4">
-    <input id="Forfatter" name="Forfatter" type="text" placeholder="" class="form-control input-md" required="">
+    <input id="Forfatter" name="kontrakt[Forfatter]" type="text" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -37,7 +37,7 @@ $filename='kontrakter_ny.php';?>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Dokument">Dokument</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="Dokument" name="Dokument"></textarea>
+    <textarea class="form-control" id="Dokument" name="kontrakt[Dokument]"></textarea>
   </div>
 </div>
 
