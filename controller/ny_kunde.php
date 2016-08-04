@@ -16,8 +16,8 @@ INSERT INTO kunder (
 	telefon,
 	epost,
 	gate,
+	postsnummer,
 	poststed,
-	postnummer,
 	historie
 ) VALUES (
 	'{$kunde['Fornavn']}',
@@ -25,8 +25,8 @@ INSERT INTO kunder (
 	'{$kunde['Telefon']}',
 	'{$kunde['Epost']}',
 	'{$kunde['Gate']}',
-	'{$kunde['Poststed']}',    
 	'{$kunde['Postnummer']}',
+	'{$kunde['Poststed']}',    
 	'Empty')
 EOT;
 # OBS!: Poststed og Postnummer bytter plass i databasen i neste versjon.

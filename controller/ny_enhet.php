@@ -11,8 +11,8 @@ $enhet = $_POST['enhet'];
 
 $query = <<<EOT
 INSERT INTO enheter (
+	varenavn,
 	antall,
-	navn,
 	qrkode,
 	serienummer,
 	gruppe,
@@ -20,8 +20,8 @@ INSERT INTO enheter (
 	pris,
 	beskrivelse
 ) VALUES (
-	{$enhet['Antall']},
 	'{$enhet['Varenavn']}',
+	{$enhet['Antall']},
 	'{$enhet['QRkode']}',
 	'{$enhet['Serienummer']}',
 	'{$enhet['Gruppe']}',

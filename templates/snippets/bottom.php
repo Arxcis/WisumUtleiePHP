@@ -11,6 +11,7 @@
 	<p>Welcome to Minnie's Heberdashery</p>
 
 	<?php
+		date_default_timezone_set('UTC');
 		echo "<p>Copyright &copy; 2016 - " . date("Y") . " wisum.no</p>";
 	?>
 
