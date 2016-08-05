@@ -1,10 +1,20 @@
-<!-- 
+<?php 
+/*
 	File: sqlconnect.php
 	Author: Jonas Solsvik
-	Created: 01/08/16        -->
+	Created: 01/08/16        */
 
-
-<?php 
+function echoAll($data){
+	echo '</br>';
+	$count = 0;
+	foreach($data as $row){
+    	foreach ($row as $key => $value) {
+    		if ($count % 2 == 0){
+    			echo $key . ' --> ' . $value . '</br>';	} 
+    		$count++;	
+    	}
+    }
+}
 
 function dbinject($sql){
 	// Function that uses an object-oriented algoritm to connect.
@@ -17,34 +27,22 @@ function dbinject($sql){
 	    $conn = new PDO("mysql:host=$servername;dbname=wisutleie", $username, $password);
 	    // set the PDO error mode to exception
 	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    #echo "Connected successfully"; 
+	    // echo "Connected successfully"; 
 	    }
 	catch(PDOException $e)
 	    {
-	   	#echo "Connection failed: " . $e->getMessage();
+	   	// echo "Connection failed: " . $e->getMessage();
 	    }
-
-	function echoAll($data){
-		echo '</br>';
-		$count = 0;
-		foreach($data as $row){
-	    	foreach ($row as $key => $value) {
-	    		if ($count % 2 == 0){
-	    			echo $key . ' --> ' . $value . '</br>';	} 
-	    		$count++;	
-	    	}
-	    }
-	}
 
 	$stmt = $conn->prepare($sql);
 	$stmt->execute();
 	try{
 		$res = $stmt->fetchAll();
-		echoAll($res);
 	} catch(Exception $e){
-		echo 'Marching on!';
+		echo "<script>console.log(Error: {$e})</script>";
 	}
-	
+	// echo '</br>Execute Success!';
+
 	$conn = null;
 	return $res;
 }

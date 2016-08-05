@@ -17,7 +17,7 @@ $TEMPLATES = '../../templates/';
 	<!-- Local CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $STATIC ?>style.css"/>
 	<!--Boostrap -->
-	<link rel="stylesheet" type="text/css" herf="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<!-- Google font API -->
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300' >
 	<!-- Font awesome -->
@@ -30,7 +30,7 @@ $TEMPLATES = '../../templates/';
 <div class="container-fluid">
 	<div class="headerflex">
 		<header>
-			<a href="/"><img src="<?php echo $STATIC ?>Wisum_logo.png" alt="Wisum logo" height="60" width="224"/> </a>
+			<a href="/"><img src="<?php echo $STATIC ?>Eviate_logo.jpg" alt="Eviate Logo"/> </a>
 		</header>
 	</div>
 
@@ -39,19 +39,19 @@ $TEMPLATES = '../../templates/';
 		<nav>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>utleie.php">Utleie</a>
-			    <a href="<?php echo $TEMPLATES;?>form_utleie.php"><i class="fa fa-plus" aria-hidden="true"></i></a>   
+			    <a href="<?php echo $TEMPLATES;?>form_utleie.php"><i class="fa fa-plus addplus" aria-hidden="true"></i></a>   
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>enheter.php">Enheter</a>
-				<a href="<?php echo $TEMPLATES;?>form_enhet.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_enhet.php"><i class="fa fa-plus addplus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>kunder.php">Kunder</a>
-				<a href="<?php echo $TEMPLATES;?>form_kunde.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_kunde.php"><i class="fa fa-plus addplus" aria-hidden="true"></i></a> 
 			</div>
 			<div class="navitem">
 				<a href="<?php echo $TEMPLATES;?>kontrakter.php">Kontrakter</a>
-				<a href="<?php echo $TEMPLATES;?>form_kontrakt.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="<?php echo $TEMPLATES;?>form_kontrakt.php"><i class="fa fa-plus addplus" aria-hidden="true"></i></a>
 			</div>
 			<div class="navitem"><a href="<?php echo $TEMPLATES;?>admin.php">Admin</a></div>
 			<div class="navitem">Logg ut</div>

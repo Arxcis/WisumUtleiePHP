@@ -1,10 +1,10 @@
-<!-- 
+<?php 
+/*
 	File: form_kunde.php
 	Author: Jonas Solsvik
-	Created: 03/08/16        -->
+	Created: 03/08/16        */
 
 
-<?php 
 include 'sqlconnect.php';
 
 $kunde = $_POST['kunde'];
@@ -16,7 +16,7 @@ INSERT INTO kunder (
 	telefon,
 	epost,
 	gate,
-	postsnummer,
+	postnummer,
 	poststed,
 	historie
 ) VALUES (
@@ -29,7 +29,6 @@ INSERT INTO kunder (
 	'{$kunde['Poststed']}',    
 	'Empty')
 EOT;
-# OBS!: Poststed og Postnummer bytter plass i databasen i neste versjon.
 
 dbinject($query);
 

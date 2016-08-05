@@ -14,7 +14,7 @@ $query = <<<EOT
 INSERT INTO utleie (
 	kund_ID, 
 	enhe_ID, 
-	bruk_ID, 
+	selg_ID, 
 	kont_ID, 
 	utlevert, 
 	tilbakelevert, 

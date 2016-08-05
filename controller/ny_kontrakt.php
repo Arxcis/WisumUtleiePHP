@@ -1,10 +1,10 @@
-<!-- 
+<?php 
+/*
 	File: form_kontrakt.php
 	Author: Jonas Solsvik
-	Created: 03/08/16        -->
+	Created: 03/08/16        */
 
 
-<?php
 include 'sqlconnect.php';
 
 $kontrakt = $_POST['kontrakt'];

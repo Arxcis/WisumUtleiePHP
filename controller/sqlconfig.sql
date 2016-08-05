@@ -34,7 +34,7 @@
 # ---------- MYSQL-wisumutleie table model -----------------
 
 
-CREATE DATABASE wisutleie;
+--CREATE DATABASE wisutleie;
 
 
 CREATE TABLE kunder (
@@ -82,7 +82,7 @@ CREATE TABLE utleie (
 	-- FOREIGN KEYS --
 	kund_ID INT UNSIGNED,
 	enhe_ID INT UNSIGNED,
-	bruk_ID INT UNSIGNED,
+	selg_ID INT UNSIGNED,
 	kont_ID INT UNSIGNED, 
 
 	utlevert TINYINT(1) UNSIGNED,

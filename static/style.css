@@ -4,32 +4,35 @@
 	Created: 29/07/16 */
 
 
-html, body {max-width: 100%;
-            font-family: 'Open sans', sans-serif;}
+html, body {max-width: 100%; font-family: 'Open sans', sans-serif; color:#333; font-size: 16px; }
+
+/*FONTS*/
+a {color: #333; text-decoration: none; }
+a:hover {text-decoration: underline; }
 
 .headerflex { display: flex; }
 
-	header { border: 1px solid white;
-			 border-bottom: 1px solid #999999; 
-			 margin-top: 40px;
+header {width: 100%; height: auto; 
+			 padding-top: 10px;
+			 padding-bottom: 10px;
 			 flex:  1 1 200px;}
 
 .mainflex {display:flex;
            flex-wrap: wrap;
        	   align-items: stretch;}
 
-	nav {border: 1px solid black;
+nav {border: 1px solid black;
 	     flex: 2 1 120px;
-	 	 font-size: 25px;}
+	 	 font-size: 18px;}
 
-		.navitem {margin: 20px;}
+.navitem {margin: 20px;}
 
-	main {border: 1px solid black;
+.addplus {margin-left: 5px; font-size: 12px !important; }
+
+main {border: 1px solid black;
 	      flex: 8 1 480px;}
-
+	      
 input {min-width: 80%;}
 
-
-
-
+table {width: 100%;}
 legend {font-size: 30px;}
